@@ -13,11 +13,10 @@ export default function LoginForm() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://backend-render-s9iy.onrender.com/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         {
           email: email,
           password: password,
-          cd,
         },
         { withCredentials: true }
       );
