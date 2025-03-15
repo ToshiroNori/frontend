@@ -8,13 +8,16 @@ export default function LoginForm() {
   const [password, setPassword] = useState("");
   const { setUser, user } = useContext(UserContext);
   const navigate = useNavigate();
+  const apiUrl = import.meta.env.VITE_BACKEND_URL
+    ? `${import.meta.env.VITE_BACKEND_URL}/api/auth/login`
+    : "http://localhost:5000/api/auth/login";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(import.meta.env.VITE_BACKEND_URL);
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/api/auth/login`,
+        apiUrl,
         {
           email: email,
           password: password,
