@@ -12,7 +12,7 @@ function App() {
   return (
     <UserProvider>
       <Routes>
-        <Route path="/login" element={<LoginForm />} />
+        <Route exact path="/" element={<LoginForm />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
