@@ -13,7 +13,7 @@ export default function LoginForm() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://backend-render-s9iy.onrender.com",
+        "https://backend-render-s9iy.onrender.com/api/auth/login",
         {
           email: email,
           password: password,
