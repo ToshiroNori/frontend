@@ -7,7 +7,6 @@ import { Github, Mail } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
 import { Eye, EyeOff } from "lucide-react";
-import { ToastContainer } from "react-toastify";
 
 function Registration() {
   const [name, setName] = useState("");
