@@ -7,6 +7,7 @@ import { Github, Mail } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
 import { Eye, EyeOff } from "lucide-react";
+import { ToastContainer } from "react-toastify";
 
 function Registration() {
   const [name, setName] = useState("");
@@ -15,6 +16,7 @@ function Registration() {
   const [showPassword, setShowpassword] = useState(false);
   const [showPassword1, setShowpassword1] = useState(false);
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [isMatch, setIsMatch] = useState(false);
 
   return (
     <div className="min-h-fit bg-gradient-to from-primary-100 flex items-center justify-center">
