@@ -48,9 +48,10 @@ function Cards() {
             />
             <Popover>
               <PopoverTrigger>
-                <button className="bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition-transform group-hover:translate-y-0 cursor-pointer">
+                {/* should be buttom */}
+                <span className="bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition-transform group-hover:translate-y-0 cursor-pointer">
                   Add to cart
-                </button>
+                </span>
               </PopoverTrigger>
               <PopoverContent className="space-y-2">
                 <Label>Put quantity:</Label>
