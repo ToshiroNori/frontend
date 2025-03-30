@@ -47,7 +47,7 @@ function Registration() {
               <Label htmlFor="Email">Email</Label>
               <Input
                 type="email"
-                placeholder="john.doe@gmail.com"
+                placeholder="sabado.daryl@gmail.com"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />

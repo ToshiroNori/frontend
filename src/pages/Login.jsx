@@ -38,7 +38,7 @@ export default function Login() {
                 value={email}
                 id="email"
                 type="email"
-                placeholder="john.doe@gmail.com"
+                placeholder="sabado.daryl@gmail.com"
                 required
               />
             </div>
